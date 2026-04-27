@@ -66,11 +66,11 @@ export function Hero() {
               <div className="h-3 w-3 rounded-full bg-green-500/80" />
               <span className="ml-4 text-xs text-muted-foreground">dashboard.sistseg360.com.br</span>
             </div>
-            <div className="aspect-video">
+            <div className="bg-[#0a0a0f] p-4">
               <img
                 src="https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/assets/Dashboard%20Sistseg360%20demo.png"
                 alt="Dashboard SistSeg360"
-                className="h-full w-full object-cover object-top"
+                className="w-full object-contain"
               />
             </div>
           </div>
