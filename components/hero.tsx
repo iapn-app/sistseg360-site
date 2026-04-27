@@ -32,15 +32,6 @@ export function Hero() {
             O SistSeg360 é o sistema que dá visibilidade total para empresas de segurança privada e administradoras de condomínio — rondas, escalas, ocorrências e relatórios em tempo real. Sem papel. Sem WhatsApp. Sem surpresas.
           </p>
 
-          {/* CTAs */}
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="gap-2 px-8" asChild>
-              <a href="https://grupoesquematiza.sistseg360.com.br" target="_blank" rel="noopener noreferrer">
-                Demonstração Gratuita
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </Button>
-          </div>
 
           {/* Trust Indicators */}
           <div className="mt-16 flex flex-col items-center gap-6 sm:flex-row sm:justify-center sm:gap-12">
