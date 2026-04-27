@@ -42,7 +42,7 @@ export function Header() {
 
           <div className="hidden items-center gap-3 md:flex">
             <Button size="sm" asChild>
-              <a href="https://sistseg360.com.br/login" target="_blank" rel="noopener noreferrer">Ver o sistema</a>
+              <a href="https://grupoesquematiza.sistseg360.com.br" target="_blank" rel="noopener noreferrer">Ver o sistema</a>
             </Button>
           </div>
 
@@ -75,7 +75,7 @@ export function Header() {
             ))}
             <div className="mt-2 flex flex-col gap-2 border-t border-border/40 pt-4">
               <Button size="sm" asChild>
-                <a href="https://sistseg360.com.br/login" target="_blank" rel="noopener noreferrer">Ver o sistema</a>
+                <a href="https://grupoesquematiza.sistseg360.com.br" target="_blank" rel="noopener noreferrer">Ver o sistema</a>
               </Button>
             </div>
           </nav>
