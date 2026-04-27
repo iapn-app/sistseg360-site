@@ -8,13 +8,12 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <span className="text-lg font-bold text-primary-foreground">S</span>
-              </div>
-              <span className="text-xl font-bold text-foreground">
-                Sist<span className="text-primary">Seg</span>360
-              </span>
+            <Link href="/">
+              <img
+                src="https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/logos/Logo%20SistSeg360.png"
+                alt="SistSeg360"
+                className="h-10 w-auto object-contain"
+              />
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
               Sistemas de gestão personalizados para transformar a operação do seu negócio.
