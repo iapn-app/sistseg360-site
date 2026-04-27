@@ -69,11 +69,10 @@ export function Pricing() {
             Planos e Preços
           </p>
           <h2 className="mt-2 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Escolha o plano ideal para seu negócio
+            Planos e Preços
           </h2>
           <p className="mt-4 text-pretty text-lg text-muted-foreground">
-            Preços transparentes, sem surpresas. Todos os planos incluem atualizações 
-            gratuitas e acesso a novos recursos.
+            Preços transparentes, sem surpresas. Sem fidelidade, sem carência — cancele quando quiser. Queremos ser parceiros do seu negócio, não te prender em contrato. Todos os planos incluem atualizações gratuitas e acesso a novos recursos.
           </p>
         </div>
 
