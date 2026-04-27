@@ -23,14 +23,13 @@ export function Hero() {
 
           {/* Headline - Copy Agressiva */}
           <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Sua empresa sangra dinheiro todo mês.
-            <span className="block text-primary">Você só ainda não viu onde.</span>
+            Você sabe o que está acontecendo
+            <span className="block text-primary">agora no seu posto?</span>
           </h1>
 
           {/* Subheadline */}
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-muted-foreground sm:text-xl">
-            Chega de gestão no feeling. O SistSeg360 é o SaaS que centraliza tudo — equipes, contratos,
-            finanças e clientes — em uma única tela. Enquanto você usa planilha, seu concorrente já automatizou.
+            O SistSeg360 é o sistema que dá visibilidade total para empresas de segurança privada e administradoras de condomínio — rondas, escalas, ocorrências e relatórios em tempo real. Sem papel. Sem WhatsApp. Sem surpresas.
           </p>
 
           {/* CTAs */}
