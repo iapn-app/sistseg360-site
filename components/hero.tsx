@@ -68,7 +68,7 @@ export function Hero() {
             </div>
             <div className="bg-[#0a0a0f] p-4">
               <img
-                src="https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/assets/Dashboard%20Sistseg360%20demo.png"
+                src="https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/assets/Print%20dashbord%20site.png"
                 alt="Dashboard SistSeg360"
                 className="w-full object-contain"
               />
