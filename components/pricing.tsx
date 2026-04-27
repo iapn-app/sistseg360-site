@@ -23,7 +23,7 @@ const plansSeguranca = [
     ],
   },
   {
-    name: "Operacional",
+    name: "Premium",
     description: "Para empresas em crescimento que precisam de controle total",
     price: "897",
     highlight: true,
@@ -41,7 +41,7 @@ const plansSeguranca = [
     ],
   },
   {
-    name: "Corporativo",
+    name: "Personalizado",
     description: "Para grandes operações com necessidades específicas",
     price: "Sob consulta",
     highlight: false,
@@ -60,7 +60,7 @@ const plansSeguranca = [
 
 const plansCondominio = [
   {
-    name: "Básico",
+    name: "Essencial",
     description: "Para um condomínio que quer sair do papel e do WhatsApp",
     price: "197",
     highlight: false,
@@ -75,14 +75,14 @@ const plansCondominio = [
     ],
   },
   {
-    name: "Gestor",
+    name: "Premium",
     description: "Para gestores que administram múltiplos condomínios",
     price: "397",
     highlight: true,
     badge: "Mais Popular",
     features: [
       "Até 5 condomínios",
-      "Todos os módulos do Básico",
+      "Todos os módulos do Essencial",
       "Reserva de áreas comuns",
       "Gestão de correspondências",
       "Relatórios gerenciais",
@@ -91,7 +91,7 @@ const plansCondominio = [
     ],
   },
   {
-    name: "Administradora",
+    name: "Personalizado",
     description: "Para administradoras com grande volume de condomínios",
     price: "Sob consulta",
     highlight: false,
