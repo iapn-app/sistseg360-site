@@ -23,29 +23,23 @@ export function Hero() {
 
           {/* Headline - Copy Agressiva */}
           <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Pare de perder dinheiro com gestão amadora.
-            <span className="block text-primary">Domine sua operação em 360°.</span>
+            Sua empresa sangra dinheiro todo mês.
+            <span className="block text-primary">Você só ainda não viu onde.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-muted-foreground sm:text-xl">
-            O único ecossistema que integra Segurança Privada, Facilities e Gestão Condominial 
-            em uma única tela. Substitua planilhas confusas por automação de elite.
+            Chega de gestão no feeling. O SistSeg360 é o SaaS que centraliza tudo — equipes, contratos,
+            finanças e clientes — em uma única tela. Enquanto você usa planilha, seu concorrente já automatizou.
           </p>
 
           {/* CTAs */}
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" className="gap-2 px-8" asChild>
-              <Link href="#contato">
-                Quero uma demonstração gratuita
+              <a href="https://grupoesquematiza.sistseg360.com.br" target="_blank" rel="noopener noreferrer">
+                Demonstração Gratuita
                 <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
-            <Button size="lg" variant="outline" className="gap-2 px-8" asChild>
-              <Link href="#solucoes">
-                <Play className="h-4 w-4" />
-                Ver Soluções
-              </Link>
+              </a>
             </Button>
           </div>
 

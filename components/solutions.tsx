@@ -6,8 +6,8 @@ const solutions = [
   {
     icon: Shield,
     title: "Segurança Privada",
-    status: "Disponível",
-    statusColor: "bg-green-500",
+    status: "Em breve",
+    statusColor: "bg-primary",
     description:
       "Escalas inteligentes, rondas em tempo real e fechamento de folha sem erros. Sua equipe monitorada, seu lucro protegido.",
     features: [
@@ -18,6 +18,7 @@ const solutions = [
       "Relatórios gerenciais",
       "App mobile para vigilantes",
     ],
+    disabled: true,
   },
   {
     icon: Building2,
@@ -34,14 +35,15 @@ const solutions = [
       "Controle de acesso",
       "Gestão de manutenções",
     ],
+    disabled: false,
   },
   {
     icon: Briefcase,
-    title: "Soluções Sob Medida",
+    title: "Personalizado",
     status: "Sob consulta",
     statusColor: "bg-muted-foreground",
     description:
-      "Sua empresa tem processos únicos? Nós criamos o software que se molda ao seu negócio, não o contrário.",
+      "Criamos do seu jeito. Seu nicho, suas regras, sua operação — desenvolvemos uma solução sob medida para o seu negócio.",
     features: [
       "Análise de requisitos",
       "Desenvolvimento personalizado",
@@ -50,6 +52,7 @@ const solutions = [
       "Suporte dedicado",
       "Atualizações contínuas",
     ],
+    disabled: false,
   },
 ]
 
@@ -86,7 +89,7 @@ export function Solutions() {
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl border border-border/50 bg-card p-8 transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5"
+              className={`group relative overflow-hidden rounded-2xl border border-border/50 bg-card p-8 transition-all duration-300 ${solution.disabled ? "opacity-50 grayscale pointer-events-none" : "hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5"}`}
             >
               {/* Icon */}
               <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10">

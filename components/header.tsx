@@ -41,9 +41,6 @@ export function Header() {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
-            <Button variant="ghost" size="sm" asChild>
-              <Link href="#contato">Entrar</Link>
-            </Button>
             <Button size="sm" asChild>
               <Link href="#contato">Demonstração Gratuita</Link>
             </Button>
@@ -77,9 +74,6 @@ export function Header() {
               </Link>
             ))}
             <div className="mt-2 flex flex-col gap-2 border-t border-border/40 pt-4">
-              <Button variant="ghost" size="sm" asChild>
-                <Link href="#contato">Entrar</Link>
-              </Button>
               <Button size="sm" asChild>
                 <Link href="#contato">Demonstração Gratuita</Link>
               </Button>
