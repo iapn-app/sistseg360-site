@@ -21,7 +21,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/">
             <img
-              src="https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/logos/Logo%20SistSeg360%20branca.png"
+              src="https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/logos/Logo%20SistSeg360%20Sem%20Fundo%20Branca.png"
               alt="SistSeg360"
               className="h-10 w-auto object-contain"
             />
