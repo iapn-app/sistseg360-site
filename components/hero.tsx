@@ -64,7 +64,7 @@ export function Hero() {
               <div className="h-3 w-3 rounded-full bg-red-500/80" />
               <div className="h-3 w-3 rounded-full bg-yellow-500/80" />
               <div className="h-3 w-3 rounded-full bg-green-500/80" />
-              <span className="ml-4 text-xs text-muted-foreground">dashboard.sistseg360.com.br</span>
+              <span className="ml-4 text-xs text-muted-foreground">www.sistseg360.com.br</span>
             </div>
             <div className="bg-[#0a0a0f] p-4">
               <img
