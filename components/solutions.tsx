@@ -78,9 +78,7 @@ export function Solutions() {
         <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-primary/30 bg-primary/5 p-6 text-center">
           <p className="text-sm font-semibold text-primary">O diferencial que faz a diferença</p>
           <p className="mt-2 text-muted-foreground">
-            No seu setor, o maior problema é o software de segurança não falar com o financeiro. 
-            A <span className="font-semibold text-foreground">SistSeg360</span> elimina o retrabalho 
-            integrando todas as áreas em uma única plataforma.
+            Para empresas de segurança, o maior problema é a operação não falar com o financeiro. Para condomínios, é não ter visibilidade do que acontece no plantão. A <span className="font-semibold text-foreground">SistSeg360</span> elimina esses gargalos integrando toda a operação em uma única plataforma — seja você gestor de uma empresa de segurança ou administrador de um condomínio.
           </p>
         </div>
 
