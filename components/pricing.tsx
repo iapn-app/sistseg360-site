@@ -1,68 +1,120 @@
+"use client"
+
+import { useState } from "react"
 import { Check, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-const plans = [
+const plansSeguranca = [
   {
-    name: "Starter",
-    description: "Para pequenas empresas começando a digitalização",
-    price: "297",
-    period: "/mês",
+    name: "Essencial",
+    description: "Para empresas começando a digitalizar a operação",
+    price: "497",
     highlight: false,
     badge: null,
     features: [
-      "Até 10 usuários",
-      "Módulos essenciais",
+      "Até 20 usuários",
+      "Módulos operacionais essenciais",
+      "Rondas e ocorrências",
+      "App mobile para vigilantes",
       "Relatórios básicos",
       "Suporte por e-mail",
       "Backup diário",
-      "App mobile básico",
     ],
   },
   {
-    name: "Professional",
-    description: "Para empresas em crescimento que precisam de mais recursos",
-    price: "597",
-    period: "/mês",
+    name: "Operacional",
+    description: "Para empresas em crescimento que precisam de controle total",
+    price: "897",
     highlight: true,
-    badge: "Melhor Custo-Benefício do Mercado",
+    badge: "Mais Popular",
     features: [
-      "Até 50 usuários",
+      "Até 100 usuários",
       "Todos os módulos",
+      "Escalas inteligentes",
+      "Financeiro completo",
       "Relatórios avançados",
       "Suporte prioritário",
       "Backup em tempo real",
       "App mobile completo",
       "Integrações API",
-      "Treinamento online",
     ],
   },
   {
-    name: "Enterprise",
+    name: "Corporativo",
     description: "Para grandes operações com necessidades específicas",
     price: "Sob consulta",
-    period: "",
     highlight: false,
     badge: null,
     features: [
       "Usuários ilimitados",
       "Módulos personalizados",
-      "Relatórios sob medida",
+      "White-label disponível",
       "Suporte dedicado 24/7",
-      "Infraestrutura dedicada",
-      "App white-label",
-      "Integrações customizadas",
+      "SLA garantido",
       "Treinamento presencial",
+      "Infraestrutura dedicada",
+    ],
+  },
+]
+
+const plansCondominio = [
+  {
+    name: "Básico",
+    description: "Para um condomínio que quer sair do papel e do WhatsApp",
+    price: "197",
+    highlight: false,
+    badge: null,
+    features: [
+      "1 condomínio",
+      "Portal do síndico",
+      "Controle de visitantes",
+      "Ocorrências",
+      "Rondas de segurança",
+      "Suporte por e-mail",
+    ],
+  },
+  {
+    name: "Gestor",
+    description: "Para gestores que administram múltiplos condomínios",
+    price: "397",
+    highlight: true,
+    badge: "Mais Popular",
+    features: [
+      "Até 5 condomínios",
+      "Todos os módulos do Básico",
+      "Reserva de áreas comuns",
+      "Gestão de correspondências",
+      "Relatórios gerenciais",
+      "Suporte prioritário",
+      "App para moradores",
+    ],
+  },
+  {
+    name: "Administradora",
+    description: "Para administradoras com grande volume de condomínios",
+    price: "Sob consulta",
+    highlight: false,
+    badge: null,
+    features: [
+      "Condomínios ilimitados",
+      "White-label disponível",
+      "Suporte dedicado 24/7",
+      "Integrações personalizadas",
       "SLA garantido",
     ],
-    extraInfo: "White-label disponível para grandes frotas e grupos de segurança.",
   },
 ]
 
 export function Pricing() {
+  const [segment, setSegment] = useState<"seguranca" | "condominio">("seguranca")
+
+  const plans = segment === "seguranca" ? plansSeguranca : plansCondominio
+
   return (
     <section id="planos" className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">
@@ -76,8 +128,45 @@ export function Pricing() {
           </p>
         </div>
 
+        {/* Toggle */}
+        <div className="mt-10 flex justify-center">
+          <div className="inline-flex rounded-xl border border-border/50 bg-secondary p-1">
+            <button
+              onClick={() => setSegment("seguranca")}
+              className={`rounded-lg px-5 py-2 text-sm font-semibold transition-all duration-200 ${
+                segment === "seguranca"
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              Empresa de Segurança
+            </button>
+            <button
+              onClick={() => setSegment("condominio")}
+              className={`rounded-lg px-5 py-2 text-sm font-semibold transition-all duration-200 ${
+                segment === "condominio"
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              Condomínio
+            </button>
+          </div>
+        </div>
+
+        {/* Promo Banner */}
+        <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-primary/30 bg-primary/5 px-6 py-4 text-center">
+          <p className="text-sm font-medium text-primary">
+            Implantação avaliada em R$2.000 inclusa gratuitamente em todos os planos · Primeiros 3 meses com 50% de desconto · Sem fidelidade, cancele quando quiser
+          </p>
+        </div>
+
         {/* Pricing Cards */}
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
+        <div
+          key={segment}
+          className="mt-12 grid gap-8 lg:grid-cols-3 transition-all duration-300"
+          style={{ animation: "fadeIn 0.3s ease" }}
+        >
           {plans.map((plan, index) => (
             <div
               key={index}
@@ -87,7 +176,7 @@ export function Pricing() {
                   : "border-border/50 bg-card/50 hover:border-border hover:bg-card"
               }`}
             >
-              {plan.highlight && plan.badge && (
+              {plan.badge && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-1 text-xs font-semibold text-primary-foreground">
                     <Award className="h-3.5 w-3.5" />
@@ -100,18 +189,22 @@ export function Pricing() {
                 <h3 className="text-xl font-bold text-foreground">{plan.name}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{plan.description}</p>
                 <div className="mt-6">
-                  <span className="text-4xl font-bold text-foreground">
-                    {plan.price.includes("consulta") ? "" : "R$"}
-                    {plan.price}
-                  </span>
-                  <span className="text-muted-foreground">{plan.period}</span>
+                  {plan.price === "Sob consulta" ? (
+                    <span className="text-3xl font-bold text-foreground">Sob consulta</span>
+                  ) : (
+                    <>
+                      <span className="text-sm font-medium text-muted-foreground">R$</span>
+                      <span className="text-4xl font-bold text-foreground">{plan.price}</span>
+                      <span className="text-muted-foreground">/mês</span>
+                    </>
+                  )}
                 </div>
               </div>
 
               <ul className="mt-8 space-y-3">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-3">
-                    <div className={`flex h-5 w-5 items-center justify-center rounded-full ${
+                    <div className={`flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full ${
                       plan.highlight ? "bg-primary" : "bg-primary/20"
                     }`}>
                       <Check className={`h-3 w-3 ${
@@ -123,12 +216,6 @@ export function Pricing() {
                 ))}
               </ul>
 
-              {plan.extraInfo && (
-                <div className="mt-6 rounded-lg bg-primary/10 p-3">
-                  <p className="text-xs text-primary">{plan.extraInfo}</p>
-                </div>
-              )}
-
               <div className="mt-8">
                 <Button
                   className="w-full"
@@ -136,7 +223,7 @@ export function Pricing() {
                   asChild
                 >
                   <Link href="#contato">
-                    {plan.price.includes("consulta") ? "Fale Conosco" : "Começar Agora"}
+                    {plan.price === "Sob consulta" ? "Fale Conosco" : "Começar Agora"}
                   </Link>
                 </Button>
               </div>
@@ -144,13 +231,14 @@ export function Pricing() {
           ))}
         </div>
 
-        {/* Guarantee */}
-        <div className="mt-12 text-center">
-          <p className="text-sm text-muted-foreground">
-            Garantia de 30 dias. Se não ficar satisfeito, devolvemos seu dinheiro.
-          </p>
-        </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(8px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </section>
   )
 }
