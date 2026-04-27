@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react"
+import { Mail, MapPin, Send, CheckCircle } from "lucide-react"
 
 export function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -18,9 +18,6 @@ export function Contact() {
     setIsLoading(false)
     setIsSubmitted(true)
   }
-
-  const whatsappNumber = "5521991678071"
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá, vi o site da SistSeg360 e gostaria de uma demonstração do sistema para meu negócio.")}`
 
   return (
     <section id="contato" className="relative py-20 sm:py-28">
@@ -67,23 +64,6 @@ export function Contact() {
                     className="text-muted-foreground transition-colors hover:text-primary"
                   >
                     contato@sistseg360.com.br
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">Telefone / WhatsApp</p>
-                  <a
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground transition-colors hover:text-primary"
-                  >
-                    (21) 99167-8071
                   </a>
                 </div>
               </div>
