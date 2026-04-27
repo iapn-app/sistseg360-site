@@ -87,7 +87,7 @@ export function Solutions() {
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-2xl border border-border/50 bg-card p-8 transition-all duration-300 ${solution.disabled ? "opacity-50 grayscale pointer-events-none" : "hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5"}`}
+              className={`group relative overflow-hidden rounded-2xl border border-border/50 bg-card p-8 transition-all duration-300 ${solution.disabled ? "opacity-60 grayscale" : "hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5"}`}
             >
               {/* Icon */}
               <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10">
