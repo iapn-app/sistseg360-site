@@ -10,7 +10,7 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/">
               <img
-                src="https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/logos/Logo%20SistSeg360.png"
+                src="https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/logos/Logo%20SistSeg360%20branca.png"
                 alt="SistSeg360"
                 className="h-10 w-auto object-contain"
               />
