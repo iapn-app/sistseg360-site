@@ -2,7 +2,7 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    photo: "https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/assets/William.png",
+    photo: "https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/assets/William.jpg",
     text: "Antes vivíamos no caos — planilhas, sistemas isolados que não conversavam, informação espalhada em WhatsApp. Hoje tenho tudo em um lugar só: escalas, ocorrências, financeiro e relatórios em tempo real. O SistSeg360 transformou a forma como gerenciamos nossa operação.",
     name: "William",
     role: "CEO – Grupo Esquematiza | Corporate Security • Risk Assessment | Public Safety Senior Officer (Major)",
