@@ -20,7 +20,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contato" className="relative py-20 sm:py-28">
+    <section id="contato" className="relative py-16 sm:py-20">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-t from-secondary/50 via-background to-background" />
 

@@ -48,7 +48,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="beneficios" className="relative py-20 sm:py-28">
+    <section id="beneficios" className="relative py-16 sm:py-20">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/30 via-background to-background" />
 

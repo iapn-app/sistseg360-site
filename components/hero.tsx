@@ -4,7 +4,7 @@ import { ArrowRight, Play, Shield, Building2, Sparkles } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-24 pb-16 sm:pt-32 sm:pb-24">
+    <section className="relative overflow-hidden pt-20 pb-12 sm:pt-28 sm:pb-16">
       {/* Background Effects */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />

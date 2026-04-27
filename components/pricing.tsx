@@ -112,7 +112,7 @@ export function Pricing() {
   const plans = segment === "seguranca" ? plansSeguranca : plansCondominio
 
   return (
-    <section id="planos" className="py-20 sm:py-28">
+    <section id="planos" className="py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
@@ -121,7 +121,7 @@ export function Pricing() {
             Planos e Preços
           </p>
           <h2 className="mt-2 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Planos e Preços
+            Escolha o plano ideal para o seu negócio
           </h2>
           <p className="mt-4 text-pretty text-lg text-muted-foreground">
             Preços transparentes, sem surpresas. Sem fidelidade, sem carência — cancele quando quiser. Queremos ser parceiros do seu negócio, não te prender em contrato. Todos os planos incluem atualizações gratuitas e acesso a novos recursos.
