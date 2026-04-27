@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram, Linkedin, Youtube } from "lucide-react"
+import { Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -27,20 +27,6 @@ export function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
-                aria-label="YouTube"
-              >
-                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -92,17 +78,17 @@ export function Footer() {
             <h4 className="text-sm font-semibold text-foreground">Legal</h4>
             <ul className="mt-4 space-y-3">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                <Link href="/termos" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
                   Termos de Uso
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                <Link href="/privacidade" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
                   Política de Privacidade
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                <Link href="/lgpd" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
                   LGPD
                 </Link>
               </li>
