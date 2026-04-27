@@ -66,58 +66,12 @@ export function Hero() {
               <div className="h-3 w-3 rounded-full bg-green-500/80" />
               <span className="ml-4 text-xs text-muted-foreground">dashboard.sistseg360.com.br</span>
             </div>
-            <div className="aspect-video bg-[#0a0a0f] p-6">
-              <div className="grid h-full grid-cols-4 gap-4">
-                {/* Sidebar */}
-                <div className="col-span-1 space-y-3 rounded-xl bg-[#12121a] p-4">
-                  <div className="h-8 w-full rounded-lg bg-primary/30" />
-                  <div className="h-6 w-3/4 rounded-lg bg-[#1a1a24]" />
-                  <div className="h-6 w-full rounded-lg bg-[#1a1a24]" />
-                  <div className="h-6 w-5/6 rounded-lg bg-[#1a1a24]" />
-                  <div className="h-6 w-full rounded-lg bg-[#1a1a24]" />
-                  <div className="mt-auto h-6 w-2/3 rounded-lg bg-[#1a1a24]" />
-                </div>
-                {/* Main Content */}
-                <div className="col-span-3 space-y-4">
-                  {/* Stats Cards */}
-                  <div className="grid grid-cols-3 gap-4">
-                    <div className="rounded-xl bg-[#12121a] p-4">
-                      <div className="h-3 w-16 rounded bg-[#1a1a24]" />
-                      <div className="mt-2 h-6 w-20 rounded bg-primary/40" />
-                      <div className="mt-1 h-2 w-12 rounded bg-green-500/40" />
-                    </div>
-                    <div className="rounded-xl bg-[#12121a] p-4">
-                      <div className="h-3 w-20 rounded bg-[#1a1a24]" />
-                      <div className="mt-2 h-6 w-16 rounded bg-primary/30" />
-                      <div className="mt-1 h-2 w-10 rounded bg-orange-500/40" />
-                    </div>
-                    <div className="rounded-xl bg-[#12121a] p-4">
-                      <div className="h-3 w-14 rounded bg-[#1a1a24]" />
-                      <div className="mt-2 h-6 w-24 rounded bg-primary/20" />
-                      <div className="mt-1 h-2 w-8 rounded bg-primary/40" />
-                    </div>
-                  </div>
-                  {/* Chart Area */}
-                  <div className="flex-1 rounded-xl bg-[#12121a] p-4">
-                    <div className="mb-3 flex items-center justify-between">
-                      <div className="h-4 w-32 rounded bg-[#1a1a24]" />
-                      <div className="flex gap-2">
-                        <div className="h-6 w-16 rounded bg-[#1a1a24]" />
-                        <div className="h-6 w-16 rounded bg-[#1a1a24]" />
-                      </div>
-                    </div>
-                    <div className="flex h-32 items-end gap-2">
-                      {[40, 65, 45, 80, 55, 90, 70, 85, 60, 75, 50, 95].map((h, i) => (
-                        <div
-                          key={i}
-                          className={`flex-1 rounded-t ${i % 2 === 0 ? "bg-primary/60" : "bg-orange-500/60"}`}
-                          style={{ height: `${h}%` }}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="aspect-video">
+              <img
+                src="https://hdeuxkoofkdawswvqxny.supabase.co/storage/v1/object/public/assets/Dashboard%20Sistseg360%20demo.png"
+                alt="Dashboard SistSeg360"
+                className="h-full w-full object-cover object-top"
+              />
             </div>
           </div>
           {/* Glow Effect */}
